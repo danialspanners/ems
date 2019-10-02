@@ -11,6 +11,7 @@
 !/*.sln
 !/**/ems*.sql
 !/**/*.settings
+!/**/*.txt
 
 #files folders to ignore
 /Copy*
