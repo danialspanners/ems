@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BusinessRules", "BusinessRules.vbproj", "{E387F88D-EEFB-44FB-BD01-DAF67332B97A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E387F88D-EEFB-44FB-BD01-DAF67332B97A}.Debug.ActiveCfg = Debug|.NET
+		{E387F88D-EEFB-44FB-BD01-DAF67332B97A}.Debug.Build.0 = Debug|.NET
+		{E387F88D-EEFB-44FB-BD01-DAF67332B97A}.Release.ActiveCfg = Release|.NET
+		{E387F88D-EEFB-44FB-BD01-DAF67332B97A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

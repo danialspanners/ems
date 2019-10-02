@@ -1,0 +1,15 @@
+//16 Mar 2004
+- Added "MyPartCode", "My Part Code" in the Functions table
+
+
+//17 Mar 2004
+- Modified WorkPlanLine table -width, length, TotalArea and PCPrice have changed to float.
+- Added Description nvarchar(255) in Workplanline table.
+- Color table with all the new color codes and pricerates.
+
+Production Folder
+- Workplan.vb 
+
+Business Project
+- Workplanbuslogic.vb
+- systembuslogic.vb

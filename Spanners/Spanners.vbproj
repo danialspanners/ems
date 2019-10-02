@@ -1,0 +1,1620 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE037F5C-29FD-49CE-AD91-3DADD212B43D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>EMS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Sales</RootNamespace>
+    <StartupObject>Sales.MainForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/EMS/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EMS.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\release\</OutputPath>
+    <DocumentationFile>EMS.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BusinessRules, Version=1.0.7074.28585, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BusinessRules\bin\BusinessRules.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Report.2, Version=2.6.20113.54459, Culture=neutral, PublicKeyToken=594a0605db190bb9" />
+    <Reference Include="C1.Common">
+      <Name>C1.Common</Name>
+      <HintPath>..\..\Program Files\ComponentOne Studio.NET\bin\C1.Common.dll</HintPath>
+      <AssemblyFolderKey>hklm\c1studio</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.2, Version=2.6.20113.54459, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL" />
+    <Reference Include="Common, Version=1.0.4150.21352, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\bin\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccess, Version=1.0.4152.26844, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccess\bin\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=5.9.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\DotNetBar\Framework20\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraEditors, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraEditors.Core, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraEditors.Design, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraGrid, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraGrid.Design, Version=1.5.2.3, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="GenericOLEDB, Version=1.0.7062.31488, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary">
+      <Name>MagicLibrary</Name>
+      <HintPath>..\..\Program Files\Crownwood Consulting Ltd\Magic Library 1.7.4\Bin\MagicLibrary.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\magic library</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.Data.Odbc, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="rr.Windows.Forms">
+      <Name>rr.Windows.Forms</Name>
+      <HintPath>bin\rr.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Sales\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales\DataSet1.xsx">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <Compile Include="Admin\AboutEMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageWH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageWHArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\MyCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SearchProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExcelTools.vb" />
+    <Compile Include="InventoryBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\InventoryListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\LowStockAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\OverStockAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\SelectPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\SelectWO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockBalReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\stockindoform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockInLoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockInPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockOutLoose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockOutSRVForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockOutWO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockRelocate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockTakeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockTransForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Production\DeliveryNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\DeliveryNoteLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\DeliveryNoteListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\WorkPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\WorkPlanLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\WorkPlanListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\EnterPO_No.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\OutstandingItemList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\OutstandingPOReportList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\OutstandingPRList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PODetailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\POForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\POForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\POList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\POList2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\POViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRItem3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRlisting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRQuotationList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRReserveStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\PRUnReserveStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\SelectDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\SetPurchasingDeliveryDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\SupplierPOList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing\WorkOrderPOReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityAssurance\QAForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityAssurance\QAInspectionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityAssurance\QAListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultantReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\DeliveryNoteReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\DeliveryOrderReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\DrawingNoReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LVBDeclarationWorkCompletionLabelReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LVBDeclarationWorkCompletionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LVBF28Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LVBReportsInvoiceStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LVBReportsPendingTOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\MaxInventoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\MinInventoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\NotificationLVBInstallReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\NotificationOGBInstallReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OfficerReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBDeclarationWorkCompletionLabelReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBDeclarationWorkCompletionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBF28Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBReportsInvoiceStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBReportsNotSurveyed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OGBReportsPendingTOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OrderConfirmationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OrderConfirmationReportBrief.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OutstandingItemListReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OutstandingPOReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\OutstandingQAInspectionReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\POReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\PRReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\QuotationComponentDetailsReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\QuotationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\QuotationReportBrief.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\StockBalDetReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\StockTakingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\stocktransreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SupplierEvaluationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SupplierListReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SupplierOnTimeReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SupplierReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SurveyOrderReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\TaskProgressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\WOOnTimeReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\WOPOReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\WorkOrderReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\WorkPlanPowderCoatPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\WorkPlanReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrderListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBDeclarationWorkCompletionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBFeedbackInstallForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBFilerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBNotificationSubcontForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBReportsInvoiceStatusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBReportsPendingTOCForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\LVBRequestF28.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\ManageCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\ManageProdSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\ManageProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\MergeQuotation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\newDeliveryOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBDeclarationWorkCompletionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBInstallFeedbackForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBNotificationSubcontForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBReportsInvoiceStatusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBReportsNotSurveyedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBReportsPendingTOCForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OGBRequestF28.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OrderConfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OrderConfirmationListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OutstandingOCList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OutstandingQuotationList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\OutstandingWOListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PrintOrderConfirmationDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PrintQuotationDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\Quotation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\QuotationListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectContractForF28.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectCustomerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectFeedbackToPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectLVBContractToPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectLVBTOCpendingform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectOGBContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectOGBContractForF28.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectOGBContractToPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectOGBTOCpendingform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectQuotation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectQuotationCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SelectSpecialFormat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SurveyOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SurveyOrderLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SurveyOrderListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\Test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\WorkOrderApprListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\WorkOrderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\WorkOrderListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\WorkOrderNewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ConsultantListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\CustomerListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\DrawingNoListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageBoxCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageBrand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageColor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageConsultant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageCustomerContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageDeliveryTerms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageDimension.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageDocumentNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageDrawing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageEnclosureType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageKeyType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageLVBBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageOfficerInCharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManagePartCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManagePaymentDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManagePriceInclude.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageSpecialFormat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageSupplierStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageUOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageUserGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\ManageUserProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\OfficerListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\SupplierListing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testForm.Designer.vb">
+      <DependentUpon>testForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Admin\AboutEMS.resx">
+      <DependentUpon>AboutEMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ChangePassword.resx">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageWH.resx">
+      <DependentUpon>ManageWH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageWHArea.resx">
+      <DependentUpon>ManageWHArea.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\MyCompany.resx">
+      <DependentUpon>MyCompany.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SearchProduct.resx">
+      <DependentUpon>SearchProduct.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\InventoryListing.resx">
+      <DependentUpon>InventoryListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\LowStockAlert.resx">
+      <DependentUpon>LowStockAlert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\OverStockAlert.resx">
+      <DependentUpon>OverStockAlert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\SelectPO.resx">
+      <DependentUpon>SelectPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\SelectWO.resx">
+      <DependentUpon>SelectWO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockAdjustment.resx">
+      <DependentUpon>StockAdjustment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockBalReportForm.resx">
+      <DependentUpon>StockBalReportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\stockindoform.resx">
+      <DependentUpon>stockindoform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockInLoose.resx">
+      <DependentUpon>StockInLoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockInPO.resx">
+      <DependentUpon>StockInPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockOutLoose.resx">
+      <DependentUpon>StockOutLoose.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockOutSRVForm.resx">
+      <DependentUpon>StockOutSRVForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockOutWO.resx">
+      <DependentUpon>StockOutWO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockRelocate.resx">
+      <DependentUpon>StockRelocate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockTakeForm.resx">
+      <DependentUpon>StockTakeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockTransForm.resx">
+      <DependentUpon>StockTransForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockViewer.resx">
+      <DependentUpon>StockViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\DeliveryNote.resx">
+      <DependentUpon>DeliveryNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\DeliveryNoteLine.resx">
+      <DependentUpon>DeliveryNoteLine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\DeliveryNoteListing.resx">
+      <DependentUpon>DeliveryNoteListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\WorkPlan.resx">
+      <DependentUpon>WorkPlan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\WorkPlanLine.resx">
+      <DependentUpon>WorkPlanLine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\WorkPlanListing.resx">
+      <DependentUpon>WorkPlanListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\EnterPO_No.resx">
+      <DependentUpon>EnterPO_No.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\OutstandingItemList.resx">
+      <DependentUpon>OutstandingItemList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\OutstandingPOReportList.resx">
+      <DependentUpon>OutstandingPOReportList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\OutstandingPRList.resx">
+      <DependentUpon>OutstandingPRList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PODetailForm.resx">
+      <DependentUpon>PODetailForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\POForm.resx">
+      <DependentUpon>POForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\POForm2.resx">
+      <DependentUpon>POForm2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\POList.resx">
+      <DependentUpon>POList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\POList2.resx">
+      <DependentUpon>POList2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\POViewForm.resx">
+      <DependentUpon>POViewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRForm.resx">
+      <DependentUpon>PRForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRItem.resx">
+      <DependentUpon>PRItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRItem3.resx">
+      <DependentUpon>PRItem3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRList.resx">
+      <DependentUpon>PRList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRlisting.resx">
+      <DependentUpon>PRlisting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRQuotationList.resx">
+      <DependentUpon>PRQuotationList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRReserveStock.resx">
+      <DependentUpon>PRReserveStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\PRUnReserveStock.resx">
+      <DependentUpon>PRUnReserveStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\SetPurchasingDeliveryDate.resx">
+      <DependentUpon>SetPurchasingDeliveryDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\SupplierPOList.resx">
+      <DependentUpon>SupplierPOList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing\WorkOrderPOReport.resx">
+      <DependentUpon>WorkOrderPOReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityAssurance\QAForm.resx">
+      <DependentUpon>QAForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityAssurance\QAInspectionReport.resx">
+      <DependentUpon>QAInspectionReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityAssurance\QAListing.resx">
+      <DependentUpon>QAListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultantReport.resx">
+      <DependentUpon>ConsultantReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerReport.resx">
+      <DependentUpon>CustomerReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DeliveryNoteReport.resx">
+      <DependentUpon>DeliveryNoteReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DeliveryOrderReport.resx">
+      <DependentUpon>DeliveryOrderReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrawingNoReport.resx">
+      <DependentUpon>DrawingNoReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InventoryReport.resx">
+      <DependentUpon>InventoryReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LVBDeclarationWorkCompletionLabelReport.resx">
+      <DependentUpon>LVBDeclarationWorkCompletionLabelReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LVBDeclarationWorkCompletionReport.resx">
+      <DependentUpon>LVBDeclarationWorkCompletionReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LVBF28Report.resx">
+      <DependentUpon>LVBF28Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LVBReportsInvoiceStatus.resx">
+      <DependentUpon>LVBReportsInvoiceStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LVBReportsPendingTOC.resx">
+      <DependentUpon>LVBReportsPendingTOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MaxInventoryReport.resx">
+      <DependentUpon>MaxInventoryReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MinInventoryReport.resx">
+      <DependentUpon>MinInventoryReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NotificationLVBInstallReport.resx">
+      <DependentUpon>NotificationLVBInstallReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NotificationOGBInstallReport.resx">
+      <DependentUpon>NotificationOGBInstallReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OfficerReport.resx">
+      <DependentUpon>OfficerReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBDeclarationWorkCompletionLabelReport.resx">
+      <DependentUpon>OGBDeclarationWorkCompletionLabelReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBDeclarationWorkCompletionReport.resx">
+      <DependentUpon>OGBDeclarationWorkCompletionReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBF28Report.resx">
+      <DependentUpon>OGBF28Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBReportsInvoiceStatus.resx">
+      <DependentUpon>OGBReportsInvoiceStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBReportsNotSurveyed.resx">
+      <DependentUpon>OGBReportsNotSurveyed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OGBReportsPendingTOC.resx">
+      <DependentUpon>OGBReportsPendingTOC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OrderConfirmationReport.resx">
+      <DependentUpon>OrderConfirmationReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OrderConfirmationReportBrief.resx">
+      <DependentUpon>OrderConfirmationReportBrief.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OutstandingItemListReport.resx">
+      <DependentUpon>OutstandingItemListReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OutstandingPOReport.resx">
+      <DependentUpon>OutstandingPOReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OutstandingQAInspectionReportForm.resx">
+      <DependentUpon>OutstandingQAInspectionReportForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\POReport.resx">
+      <DependentUpon>POReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PRReport.resx">
+      <DependentUpon>PRReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\QuotationComponentDetailsReport.resx">
+      <DependentUpon>QuotationComponentDetailsReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\QuotationReport.resx">
+      <DependentUpon>QuotationReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\QuotationReportBrief.resx">
+      <DependentUpon>QuotationReportBrief.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockBalDetReport.resx">
+      <DependentUpon>StockBalDetReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockTakingForm.resx">
+      <DependentUpon>StockTakingForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\stocktransreport.resx">
+      <DependentUpon>stocktransreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierEvaluationReport.resx">
+      <DependentUpon>SupplierEvaluationReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierListReport.resx">
+      <DependentUpon>SupplierListReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierOnTimeReport.resx">
+      <DependentUpon>SupplierOnTimeReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierReport.resx">
+      <DependentUpon>SupplierReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SurveyOrderReport.resx">
+      <DependentUpon>SurveyOrderReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TaskProgressForm.resx">
+      <DependentUpon>TaskProgressForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WOOnTimeReport.resx">
+      <DependentUpon>WOOnTimeReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WOPOReport.resx">
+      <DependentUpon>WOPOReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WorkOrderReport.resx">
+      <DependentUpon>WorkOrderReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WorkPlanPowderCoatPrice.resx">
+      <DependentUpon>WorkPlanPowderCoatPrice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WorkPlanReport.resx">
+      <DependentUpon>WorkPlanReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrder.resx">
+      <DependentUpon>DeliveryOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrderListing.resx">
+      <DependentUpon>DeliveryOrderListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBContract.resx">
+      <DependentUpon>LVBContract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBDeclarationWorkCompletionForm.resx">
+      <DependentUpon>LVBDeclarationWorkCompletionForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBFeedbackInstallForm.resx">
+      <DependentUpon>LVBFeedbackInstallForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBFilerForm.resx">
+      <DependentUpon>LVBFilerForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBListing.resx">
+      <DependentUpon>LVBListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBNotificationSubcontForm.resx">
+      <DependentUpon>LVBNotificationSubcontForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBReportsInvoiceStatusForm.resx">
+      <DependentUpon>LVBReportsInvoiceStatusForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBReportsPendingTOCForm.resx">
+      <DependentUpon>LVBReportsPendingTOCForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\LVBRequestF28.resx">
+      <DependentUpon>LVBRequestF28.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\ManageCategory.resx">
+      <DependentUpon>ManageCategory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\ManageProdSupplier.resx">
+      <DependentUpon>ManageProdSupplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\ManageProduct.resx">
+      <DependentUpon>ManageProduct.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\MergeQuotation.resx">
+      <DependentUpon>MergeQuotation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\newDeliveryOrder.resx">
+      <DependentUpon>newDeliveryOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBContract.resx">
+      <DependentUpon>OGBContract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBDeclarationWorkCompletionForm.resx">
+      <DependentUpon>OGBDeclarationWorkCompletionForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBForm.resx">
+      <DependentUpon>OGBForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBInstallFeedbackForm.resx">
+      <DependentUpon>OGBInstallFeedbackForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBListing.resx">
+      <DependentUpon>OGBListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBNotificationSubcontForm.resx">
+      <DependentUpon>OGBNotificationSubcontForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBReportsInvoiceStatusForm.resx">
+      <DependentUpon>OGBReportsInvoiceStatusForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBReportsNotSurveyedForm.resx">
+      <DependentUpon>OGBReportsNotSurveyedForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBReportsPendingTOCForm.resx">
+      <DependentUpon>OGBReportsPendingTOCForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OGBRequestF28.resx">
+      <DependentUpon>OGBRequestF28.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OrderConfirmation.resx">
+      <DependentUpon>OrderConfirmation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OrderConfirmationListing.resx">
+      <DependentUpon>OrderConfirmationListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OutstandingOCList.resx">
+      <DependentUpon>OutstandingOCList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OutstandingQuotationList.resx">
+      <DependentUpon>OutstandingQuotationList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\OutstandingWOListing.resx">
+      <DependentUpon>OutstandingWOListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PrintOrderConfirmationDialog.resx">
+      <DependentUpon>PrintOrderConfirmationDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PrintQuotationDialog.resx">
+      <DependentUpon>PrintQuotationDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Quotation.resx">
+      <DependentUpon>Quotation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\QuotationListing.resx">
+      <DependentUpon>QuotationListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectBox.resx">
+      <DependentUpon>SelectBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectContract.resx">
+      <DependentUpon>SelectContract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectContractForF28.resx">
+      <DependentUpon>SelectContractForF28.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectCustomerForm.resx">
+      <DependentUpon>SelectCustomerForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectFeedbackToPrint.resx">
+      <DependentUpon>SelectFeedbackToPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectLVBContractToPrint.resx">
+      <DependentUpon>SelectLVBContractToPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectLVBTOCpendingform.resx">
+      <DependentUpon>SelectLVBTOCpendingform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectOGBContract.resx">
+      <DependentUpon>SelectOGBContract.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectOGBContractForF28.resx">
+      <DependentUpon>SelectOGBContractForF28.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectOGBContractToPrint.resx">
+      <DependentUpon>SelectOGBContractToPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectOGBTOCpendingform.resx">
+      <DependentUpon>SelectOGBTOCpendingform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectProduct.resx">
+      <DependentUpon>SelectProduct.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectQuotation.resx">
+      <DependentUpon>SelectQuotation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectQuotationCopy.resx">
+      <DependentUpon>SelectQuotationCopy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SelectSpecialFormat.resx">
+      <DependentUpon>SelectSpecialFormat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SurveyOrder.resx">
+      <DependentUpon>SurveyOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SurveyOrderLine.resx">
+      <DependentUpon>SurveyOrderLine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SurveyOrderListing.resx">
+      <DependentUpon>SurveyOrderListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Test.resx">
+      <DependentUpon>Test.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\WorkOrderApprListing.resx">
+      <DependentUpon>WorkOrderApprListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\WorkOrderForm.resx">
+      <DependentUpon>WorkOrderForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\WorkOrderListing.resx">
+      <DependentUpon>WorkOrderListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\WorkOrderNewForm.resx">
+      <DependentUpon>WorkOrderNewForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ConsultantListing.resx">
+      <DependentUpon>ConsultantListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\CustomerListing.resx">
+      <DependentUpon>CustomerListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\DrawingNoListing.resx">
+      <DependentUpon>DrawingNoListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageBoxCategory.resx">
+      <DependentUpon>ManageBoxCategory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageBrand.resx">
+      <DependentUpon>ManageBrand.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageColor.resx">
+      <DependentUpon>ManageColor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageConsultant.resx">
+      <DependentUpon>ManageConsultant.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageCurrency.resx">
+      <DependentUpon>ManageCurrency.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageCustomer.resx">
+      <DependentUpon>ManageCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageCustomerContact.resx">
+      <DependentUpon>ManageCustomerContact.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageDeliveryTerms.resx">
+      <DependentUpon>ManageDeliveryTerms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageDimension.resx">
+      <DependentUpon>ManageDimension.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageDocumentNo.resx">
+      <DependentUpon>ManageDocumentNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageDrawing.resx">
+      <DependentUpon>ManageDrawing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageEnclosureType.resx">
+      <DependentUpon>ManageEnclosureType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageKeyType.resx">
+      <DependentUpon>ManageKeyType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageLVBBox.resx">
+      <DependentUpon>ManageLVBBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageMaterial.resx">
+      <DependentUpon>ManageMaterial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageOfficerInCharge.resx">
+      <DependentUpon>ManageOfficerInCharge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManagePartCode.resx">
+      <DependentUpon>ManagePartCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManagePaymentDetails.resx">
+      <DependentUpon>ManagePaymentDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManagePriceInclude.resx">
+      <DependentUpon>ManagePriceInclude.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageProject.resx">
+      <DependentUpon>ManageProject.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageSpecialFormat.resx">
+      <DependentUpon>ManageSpecialFormat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageSupplier.resx">
+      <DependentUpon>ManageSupplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageSupplierStatus.resx">
+      <DependentUpon>ManageSupplierStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageUOM.resx">
+      <DependentUpon>ManageUOM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageUserGroup.resx">
+      <DependentUpon>ManageUserGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ManageUserProfile.resx">
+      <DependentUpon>ManageUserProfile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\OfficerListing.resx">
+      <DependentUpon>OfficerListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\SupplierListing.resx">
+      <DependentUpon>SupplierListing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Note.bmp" />
+    <Content Include="Quotation.bmp" />
+    <Content Include="Sales\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sales\DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Text.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

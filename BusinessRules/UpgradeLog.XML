@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BusinessRules">
+</Property><Property Name="Solution File" Value="D:\EMS2005\BusinessRules\BusinessRules.sln">
+</Property><Property Name="Date" Value="Tuesday, May 04, 2010">
+</Property><Property Name="Time" Value="20:27 PM">
+</Property></Properties><Event ErrorLevel="0" Project="BusinessRules" Source="BusinessRules.vbproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="BusinessRules" Source="BusinessRules.vbproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="BusinessRules.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="BusinessRules.sln" Description="Converted">
+</Event></UpgradeLog>

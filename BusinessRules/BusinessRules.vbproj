@@ -1,0 +1,259 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E387F88D-EEFB-44FB-BD01-DAF67332B97A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BusinessRules</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>BusinessRules</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/BusinessRules/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BusinessRules.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BusinessRules.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess, Version=1.0.3651.22530, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccess\bin\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils">
+      <Name>DevExpress.Utils</Name>
+      <HintPath>..\Spanners\bin\DevExpress.Utils.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors">
+      <Name>DevExpress.XtraEditors</Name>
+      <HintPath>..\Spanners\bin\DevExpress.XtraEditors.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.Core">
+      <Name>DevExpress.XtraEditors.Core</Name>
+      <HintPath>..\Spanners\bin\DevExpress.XtraEditors.Core.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.Design">
+      <Name>DevExpress.XtraEditors.Design</Name>
+      <HintPath>..\Spanners\bin\DevExpress.XtraEditors.Design.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid">
+      <Name>DevExpress.XtraGrid</Name>
+      <HintPath>..\Spanners\bin\DevExpress.XtraGrid.dll</HintPath>
+      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CategoryBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsultantBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnquiryBusLogic.vb" />
+    <Compile Include="BQBusLogic.vb" />
+    <Compile Include="CurrencyBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeliveryNoteBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawingBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InventoryBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LVBBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManProdBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManProdSupBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManUOMBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManUserProfileLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OGBBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PRBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QABusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReservedStockLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SaleBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupplierBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SurveyOrderBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHAreaBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WHLocationBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkOrderBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkPlanBusLogic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

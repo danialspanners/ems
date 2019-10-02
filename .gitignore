@@ -1,0 +1,40 @@
+#ignore everything
+/*
+
+#files not to ignore
+!/.gitignore
+!/*.vb
+!/*.xml
+!/*.resx
+!/*.vbproj
+!/*.bmp
+!/*.sln
+!/**/ems*.sql
+!/**/*.settings
+
+#files folders to ignore
+/Copy*
+/**/*.~vb
+/**/*.~xm
+/Spanners/bin/
+/Spanners/bin/*
+/Spanners/bin64/
+/Spanners/bin64/*
+/Spanners/obj/
+/Spanners/obj/*
+/Spanners/release/
+/Spanners/release/*
+/**/Debug
+/**/bin
+/**/Release
+/**/*.dll
+/**/*.cache
+/**/*.bak
+
+
+#folders not to ignore
+!/Spanners/
+!/BusinessRules/
+!/Common/
+!/DataAccess/
+!/EMSUpdater/
